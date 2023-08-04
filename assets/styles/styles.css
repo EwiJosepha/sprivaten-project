@@ -1,4 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General Styles */
+
 * {
-  margin: auto;
-  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+  background-color: #252b42;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+
+.hero-section {
+  background-image: linear-gradient(#00000082, #00000071, #00000091),
+    url("./assets/images/cover.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+  padding: 0 0 1rem 0;
+}
+
+.hero-section nav {
+  min-width: 1024px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav .logo {
+  width: 50%;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.links .icons {
+  display: flex;
+  align-items: center;
+}
+
+.links .icons img {
+  padding: 1rem;
+}
+
+.links .menu {
+  position: absolute;
+  right: 50px;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+}
+
+.links ul li {
+  padding: 1rem;
+}
+
+.links ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+}
+
+.hero-section-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: #fff;
+}
+
+.hero-section-text .info {
+  height: fit-content;
+}
+
+.hero-section-text .info h1 {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 80px;
+  word-break: normal;
+  max-width: 509px;
+}
+
+.hero-section-text .info p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  word-break: normal;
+  max-width: 376px;
+}
+
+.action-buttons .contained {
+  height: 48px;
+  padding: 10px 36px 10px 36px;
+  border-radius: 37px;
+  background-color: #ffa62b;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  border: none;
+}
+
+.action-buttons .outlined {
+  height: 48px;
+  padding: 10px 36px 10px 36px;
+  border-radius: 37px;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  border: 1px solid #fff;
+}
+
+.hero-section-text form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  min-width: 328px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.hero-section-text form button {
+  margin: 1rem 0;
+  height: 58px;
+  padding: 15px 40px 15px 40px;
+  border-radius: 5px;
+  background-color: #ffa62b;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.hero-section-text form legend {
+  padding: 1rem 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+form .input-feild {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form .input-feild label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.input-feild input,
+.input-feild select {
+  height: 50px;
+  border: 1px solid #bdbdbd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.input-feild input::placeholder,
+.input-feild select {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+select:focus,
+input:focus {
+  outline: none;
 }

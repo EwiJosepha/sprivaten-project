@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sprivaten-Project</title>
-  <link rel="stylesheet" href="assets/styles/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprivaten-Project</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
 
-</body>
+    <section class="hero-section">
+      <nav>
+        <span class="logo">
+          <img src="./assets/images/navbar-brand.png" alt="brand-logo" />
+        </span>
+        <div class="links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="icons">
+            <img src="./assets/images/search-icon.png" alt="search-icon" />
+            <img src="./assets/images/shopping-icon.png" alt="shopping-icon" />
+          </div>
+          <div class="menu">
+            <img src="./assets/images/navbar-toggler.png" alt="menu" />
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-section-text">
+        <div class="info">
+          <h1>We Take Care of the Future</h1>
+          <p>
+            We know how large objects will act, but things on a small scale.
+          </p>
+          <div class="action-buttons">
+            <button type="button" class="contained">Get Quote Now</button>
+            <button type="button" class="outlined">Learn More</button>
+          </div>
+        </div>
+
+        <form action="">
+          <legend>Book Appointment</legend>
+
+          <div class="input-feild">
+            <label for="name">Name*</label>
+            <input
+              type="text"
+              name="name"
+              id=""
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="input-feild">
+            <label for="email">Email*</label>
+            <input
+              type="text"
+              name="email"
+              id=""
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+          <div class="input-feild">
+            <label for="">Departement</label>
+            <select name="" id="">
+              <option value="">Departement</option>
+              <option value="">Physics</option>
+              <option value="">Newtonian Physics</option>
+            </select>
+          </div>
+          <div class="input-feild">
+            <label for="">Time</label>
+            <select name="" id="">
+              <option value="">4:00 Available</option>
+              <option value="">5:00 Available</option>
+            </select>
+          </div>
+          <button type="submit">Book Appointment</button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
