@@ -4,7 +4,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 body {
@@ -25,7 +25,8 @@ body {
 /* Hero Section */
 
 .hero-section {
-  background-image: linear-gradient(#00000082, #00000071, #00000091),
+  background-image:
+   linear-gradient(#00000082, #00000071, #00000091),
     url("../images/cover.png");
   background-position: center;
   background-size: cover;
@@ -35,7 +36,7 @@ body {
   align-items: center;
   width: 100vw;
   gap: 25px;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1rem ;
 }
 
 .hero-section nav {
@@ -241,7 +242,7 @@ input:focus {
   margin: 0 auto;
   width: 100vw;
 }
-.section-one .section-one-text {
+.section-one-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +297,7 @@ input:focus {
   padding: 10px;
 }
 
-.container .card-content-for-first-card .top-card .card-icone {
+ .top-card .card-icone {
   display: flex;
 }
 
@@ -307,7 +308,7 @@ input:focus {
   margin: 0 auto;
 }
 
-.container .card-content-for-first-card .top-card .card-icone h4 {
+.top-card .card-icone h4 {
   display: flex;
   justify-content: center;
   align-items: center;
